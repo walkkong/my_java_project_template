@@ -1,0 +1,15 @@
+server:
+  port: 28083
+
+# datasource config
+spring:
+  datasource:
+    name: db1
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/my_test?useUnicode=true&characterEncoding=utf8&autoReconnect=true&useSSL=false&serverTimezone=UTC
+    username: root
+    password: L051228n!
+
+mybatis:
+  mapper-locations:
+    classpath:  mapper/*Mapper.xml,classpath:auto_generate/**/*.xml
